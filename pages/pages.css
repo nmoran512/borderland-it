@@ -126,12 +126,16 @@ a {
   align-items: center;
 }
 
+.cta-text {
+  text-align: left;
+}
 
 .button-9:focus {
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
 }
 
 .final-stuff{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,7 +150,7 @@ a {
 .contact {
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 10px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -226,7 +230,35 @@ form{
 }
 
 .cta-about {
+  padding: 20px;
+  background-color: #e5e5e5;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+@media (max-width: 500px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #1b264f;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 1rem 0;
+  }
 }
