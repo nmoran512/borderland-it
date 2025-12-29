@@ -497,26 +497,10 @@ html {
   .contact {
     text-align: center;
   }
-  footer{
-    text-align: center;
+  .mission {
+    display: none;
   }
-  .footer-box{
-    margin: 0;
-  }
-  .brand-header{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .social-media{
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .social-media img{
-    padding: 10px;
-  }
+  
 }
 
 
@@ -553,6 +537,26 @@ html {
         align-items: center;
         justify-content: center;
     }
+    footer{
+    text-align: center;
+  }
+  .footer-box{
+    margin: 0;
+  }
+  .brand-header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .social-media{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .social-media img{
+    padding: 10px;
+  }
     .company-footer{
         display: none;
     }
