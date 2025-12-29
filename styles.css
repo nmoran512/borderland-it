@@ -490,6 +490,33 @@ html {
     text-align: center;
     padding: 1rem 0;
   }
+  
+  .about-list{
+    flex-direction: column;
+  }
+  .contact {
+    text-align: center;
+  }
+  footer{
+    text-align: center;
+  }
+  .footer-box{
+    margin: 0;
+  }
+  .brand-header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .social-media{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .social-media img{
+    padding: 10px;
+  }
 }
 
 
@@ -531,6 +558,15 @@ html {
     }
     .service-footer{
         display: none;
+    }
+    .services {
+        align-items: center;
+        text-align: center;
+    }
+    .block p{
+        text-align: center;
+        align-items: center;
+        max-width: fit-content;
     }
 }
 
