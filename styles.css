@@ -446,6 +446,9 @@ footer p{
     justify-content: space-between;
     margin: 10px 20px
 }
+.service-footer{
+    justify-content: space-around;
+}
 .social-media{
     padding-top: 20px;
     display: flex;
