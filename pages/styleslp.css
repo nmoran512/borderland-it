@@ -1,0 +1,15 @@
+
+.hs-form-frame {
+display: inline-block;   /* Make it only as wide as content */
+  max-width: 500px;        /* Optional max width */
+  width: 100%;             /* Allows responsive shrinking on mobile */
+  margin: 0 auto;          /* Centers form horizontally */
+  background: transparent; /* Ensures your section background shows */
+  padding: 20px;           /* Optional: space around form */
+  box-sizing: border-box; 
+}
+.hs-form-frame,
+.hs-form,
+.hs-form fieldset {
+    background: transparent;
+}
