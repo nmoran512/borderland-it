@@ -298,90 +298,15 @@ body{
     max-width: 50vw;
 }
 
-/* ---------------------- Form Container ---------------------- */
-form {
-    max-width: 600px;         /* constrain width for readability */
-    margin: 2rem auto;        /* center the form with vertical spacing */
-    padding: 2rem;
-    background-color: #f5f3f5;
-    border-radius: 12px;
-    font-family: "Open Sans", sans-serif;
+.hs-form-frame {
+display: inline-block;   /* Make it only as wide as content */
+  max-width: 500px;        /* Optional max width */
+  width: 100%;             /* Allows responsive shrinking on mobile */
+  margin: 0 auto;          /* Centers form horizontally */
+  background: transparent; /* Ensures your section background shows */
+  padding: 20px;           /* Optional: space around form */
+  box-sizing: border-box; 
 }
-.form-group {
-    font-family: "Open Sans", sans-serif;;
-}
-/* ---------------------- Form Rows ---------------------- */
-.form-row {
-    display: flex;
-    gap: 1.5rem;             /* spacing between columns */
-    flex-wrap: wrap;          /* wrap on smaller screens */
-    margin-bottom: 1rem;
-}
-
-.form-row .col {
-    flex: 1;                  /* equal width */
-    min-width: 150px;         /* prevent shrinking too small */
-}
-
-/* ---------------------- Inputs & Textarea ---------------------- */
-.form-control {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    box-sizing: border-box;    /* include padding in width */
-    background-color: #fff;
-}
-
-.form-control:focus {
-    outline: none;
-    border-color: #0b5ed7;   /* highlight on focus */
-    box-shadow: 0 0 0 3px rgba(11, 94, 215, 0.2);
-}
-
-/* Make textarea vertically resizable */
-textarea.form-control {
-    resize: vertical;
-    font-family: "Open Sans", sans-serif; /* ensure same font as the rest of the form */
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-/* ---------------------- Submit Button ---------------------- */
-button.btn {
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 1.1rem;
-    border-radius: 8px;
-    background-color: #1b264f;
-    color: #fff;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button.btn:hover {
-    background-color: #0b5ed7;
-    transform: translateY(-2px);
-    cursor: pointer;
-}
-
-/* ---------------------- Placeholder Styling ---------------------- */
-::placeholder {
-    color: #888;
-    opacity: 1; /* show in all browsers */
-}
-
-/* ---------------------- Responsive Adjustments ---------------------- */
-@media (max-width: 600px) {
-    .form-row {
-        flex-direction: column;
-        gap: 1rem;
-    }
-}
-
 
 
 
