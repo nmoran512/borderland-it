@@ -243,21 +243,39 @@ body{
     margin-left: 10px;
 }
 
+
 .about {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding: 100px 20px; /* keep vertical/horizontal padding */
+    max-width: 100%;
     text-align: left;
-    justify-content: center;  
-    align-items: center; 
-
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow-x: hidden; /* ensures nothing spills horizontally */
 }
-.about-content{
+
+.about-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1100px; /* constrains content to viewport */
+    width: 100%;
+    box-sizing: border-box;
 }
+
+.about img {
+    max-width: 100%; /* ensures image never exceeds container */
+    height: auto;
+    display: block;
+}
+
+.about p {
+    overflow-wrap: break-word; /* ensures long text wraps */
+}
+
 .about h4{
     color: #302b27;
 }
@@ -279,6 +297,13 @@ body{
     align-items: center;
 }
 
+.certs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
 
 .socials {
     display: flex;
@@ -423,7 +448,7 @@ html {
     padding: 1rem 0;
   }
   
-  
+
   .contact {
     text-align: center;
   }
@@ -457,14 +482,10 @@ html {
         flex-direction: column;
         text-align: center;
     }
-
-    .certs {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        text-align: center;
+    .certs{
+        flex-direction: column;
     }
+    
     .contact{
         flex-direction: column;
         align-items: center;
