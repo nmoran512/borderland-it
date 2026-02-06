@@ -244,66 +244,94 @@ body{
 }
 
 
-.about {
-    display: flex;
-    flex-direction: column;
-    padding: 100px 20px; /* keep vertical/horizontal padding */
-    max-width: 100%;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    overflow-x: hidden; /* ensures nothing spills horizontally */
+.timeline-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  text-align: left;
 }
 
-.about-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1100px; /* constrains content to viewport */
-    width: 100%;
-    box-sizing: border-box;
+.timeline-section .container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.about img {
-    max-width: 100%; /* ensures image never exceeds container */
-    height: auto;
-    display: block;
+.timeline-section h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
-.about p {
-    overflow-wrap: break-word; /* ensures long text wraps */
+.timeline-section .subtitle {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 50px;
 }
 
-.about h4{
-    color: #302b27;
+/* Timeline Items */
+.timeline-item {
+  margin-bottom: 40px;
 }
-.about h1{
-    margin-top: 0;
-    font-size: 5vh;
-    color: #1b264f;
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
-.about-row{
-    padding: 20px;
+
+.timeline-icon {
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
 }
-.about-list{
-    display: flex;
+
+.timeline-header h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.timeline-item p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  margin-left: 55px; /* aligns with icon/title above */
+}
+
+/* CTA Button */
+.cta {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cta a {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline-header {
     flex-direction: row;
-    justify-content: space-evenly;
-}
-.about-block{
-    display: flex;
-    align-items: center;
+  }
+  .timeline-item p {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 
-.certs {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        text-align: center;
-    }
 
 .socials {
     display: flex;
